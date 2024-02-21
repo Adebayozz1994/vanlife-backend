@@ -16,6 +16,10 @@ const vans = [
     { id: 6, name: "Green Wonder", price: 70, description: "With this van, you can take your travel life to the next level. The Green Wonder is a sustainable vehicle that's perfect for people who are looking for a stylish, eco-friendly mode of transport that can go anywhere.", imageUrl: "https://assets.scrimba.com/advanced-react/react-router/green-wonder.png", type: "rugged", hostId: "123" }
 ];
 
+app.get('/', (req, res) => {
+    res.send("Hello world");
+    console.log("Hello world");
+});
 app.get('/api/vans', (req, res) => {
     res.send(vans);
 });
